@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <title>Music Player</title>
+</head>
+
+<body>
+    <h1>Music Player</h1>
+    <div class="container">
+        <!-- This div below contains music details and controls -->
+        <div class="music-player">
+
+            <!-- image container -->
+            <div class="img-container">
+                <!-- album art -->
+                <img src="https://ncsmusic.s3.eu-west-1.amazonaws.com/tracks/000/000/152/1000x0/on-on-feat-daniel-levi-1586947008-oeI24in2Ga.jpg"
+                    alt="" class="music-img" id="music-img">
+            </div>
+
+            <!-- music controls and details -->
+            <div class="music-controls">
+
+                <h2 class="music-name" id="music-name">music-name</h2>
+                <p class="music-details" id="album">Album</p>
+                <p class="music-details" id="released-on">Released On</p>
+                <p class="music-details" id="artist">Artist</p>
+                <p class="music-details" id="label">Label</p>
+
+                <!-- Music Controls -->
+                <div class="controls">
+                    <div class="progress-div" id="progress-div">
+                        <div class="progress-bar" id="progress-bar"></div>
+                    </div>
+                    <audio src="./assets/music/I-Took-A-Pill-In-Ibiza.mp3" id="audio"></audio>
+                    <div class="control-btns">
+                        <button class="control-btn" id="previous"><img src="./assets/icons/previous.svg" alt="previous.svg"
+                                class="controls-img"></button>
+                        <button class="control-btn" id="play"><img src="./assets/icons/play.svg" alt="play.svg"
+                                class="controls-img" id="play-img"></button>
+                        <button class="control-btn" id="next"><img src="./assets/icons/forward.svg" alt="forward.svg"
+                                class="controls-img"></button>
+                    </div>
+                    <div class="volume-control">
+                        <img src="./assets/icons/volume.svg" alt="volume.svg" class="volume-img">
+                        <div class="volume-div" id="volume-div">
+                            <div class="volume-bar" id="volume-bar"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div> <!-- music player closing tag -->
+
+        <!-- This div below contains playlist-->
+        <div class="music-list">
+            <div class="playlist-box" id="playlist-box">
+
+                <!-- <div class="play-item">
+
+                    <div class="pi-album-art-div">
+                        <img src=""
+                            alt="pi-album-art"
+                            class="album-art"
+                            id="pi-album-art">
+                    </div>
+
+                    <div class="pi-song-details">
+                        <h4 class="song-name" id="pi-song-name">Song-Name</h4>
+                        <p class="song-artist" id="pi-song-artist">Song-Artist</p>
+                    </div>
+
+                </div> play-item closing -->
+                
+            </div> <!--playlist-box closing -->
+
+        </div> <!--music list closing -->
+
+    </div> <!--container closing-->
+
+    <script type="module" src="./scripts.js"></script>
+</body>
+
+</html>
